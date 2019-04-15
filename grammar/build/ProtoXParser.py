@@ -1,4 +1,3 @@
-# Generated from /Users/CFboy/PycharmProjects/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -47,12 +46,12 @@ class ProtoXParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'add'", "'delete'", "'edit'", "'hospitals'", 
-                     "'procedures'", "'protocols'", "'('", "')'", "'show'", 
+    literalNames = [ "<INVALID>", "'add'", "'delete'", "'edit'", "'hospitals'",
+                     "'procedures'", "'protocols'", "'('", "')'", "'show'",
                      "'list'", "'\"'", "<INVALID>", "','" ]
 
-    symbolicNames = [ "<INVALID>", "ADD", "DELETE", "EDIT", "HOSP", "PROC", 
-                      "PROTO", "LP", "RP", "SHOW", "LIST", "QUOTATION", 
+    symbolicNames = [ "<INVALID>", "ADD", "DELETE", "EDIT", "HOSP", "PROC",
+                      "PROTO", "LP", "RP", "SHOW", "LIST", "QUOTATION",
                       "ID", "COMMA", "NEWLINE", "WHITESPACE" ]
 
     RULE_prog = 0

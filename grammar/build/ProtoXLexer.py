@@ -1,4 +1,3 @@
-# Generated from /Users/CFboy/PycharmProjects/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
 from antlr4 import *
 from io import StringIO
 from typing.io import TextIO
@@ -78,15 +77,15 @@ class ProtoXLexer(Lexer):
     modeNames = [ "DEFAULT_MODE" ]
 
     literalNames = [ "<INVALID>",
-            "'add'", "'delete'", "'edit'", "'hospitals'", "'procedures'", 
+            "'add'", "'delete'", "'edit'", "'hospitals'", "'procedures'",
             "'protocols'", "'('", "')'", "'show'", "'list'", "'\"'", "','" ]
 
     symbolicNames = [ "<INVALID>",
-            "ADD", "DELETE", "EDIT", "HOSP", "PROC", "PROTO", "LP", "RP", 
+            "ADD", "DELETE", "EDIT", "HOSP", "PROC", "PROTO", "LP", "RP",
             "SHOW", "LIST", "QUOTATION", "ID", "COMMA", "NEWLINE", "WHITESPACE" ]
 
-    ruleNames = [ "ADD", "DELETE", "EDIT", "HOSP", "PROC", "PROTO", "LP", 
-                  "RP", "SHOW", "LIST", "QUOTATION", "ID", "COMMA", "NEWLINE", 
+    ruleNames = [ "ADD", "DELETE", "EDIT", "HOSP", "PROC", "PROTO", "LP",
+                  "RP", "SHOW", "LIST", "QUOTATION", "ID", "COMMA", "NEWLINE",
                   "WHITESPACE", "DIGIT", "LETTER" ]
 
     grammarFileName = "ProtoX.g4"

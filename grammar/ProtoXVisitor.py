@@ -9,18 +9,15 @@ class ProtoXVisitor(ProtoXVisitorOriginal):
     def visitStatements(self, ctx):
         return self.visitChildren(ctx)
 
-    def visitStatement(self, ctx):
+    def visitExpr(self, ctx:ProtoXParser.ExprContext):
         result = None
-        if ctx.expr():
-            result = self.visitExpr(ctx.expr())
-            print("The result is: " + str(result))
-        else:
-            result = super().visitStatement(ctx)
+        print(ctx.ADD())
+        print(ctx.HOSP())
+        print(ctx.LP(0))
+        print(ctx.QUOTATION(0))
+        print(ctx.ID(0))
+        print(ctx.SHOW())
         return result
 
-    def visitExpr(self, ctx):
-        if ctx.INT():
-            return int(ctx.INT().getText())
 
-        if ctx.PLUS():
-            return self.visitExpr(ctx.expr(0)) + self.visitExpr(ctx.expr(1))
+
