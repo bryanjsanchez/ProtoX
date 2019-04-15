@@ -1,4 +1,4 @@
-# Generated from /Users/nemo/git/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
+# Generated from /Users/CFboy/PycharmProjects/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,18 +8,32 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\7")
-        buf.write("!\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\3\7\3")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\21")
+        buf.write("Q\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\3\7\3")
         buf.write("\17\n\3\f\3\16\3\22\13\3\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3")
-        buf.write("\5\7\5\34\n\5\f\5\16\5\37\13\5\3\5\2\3\b\6\2\4\6\b\2\2")
-        buf.write("\2\36\2\n\3\2\2\2\4\20\3\2\2\2\6\23\3\2\2\2\b\25\3\2\2")
-        buf.write("\2\n\13\5\4\3\2\13\f\7\2\2\3\f\3\3\2\2\2\r\17\5\6\4\2")
-        buf.write("\16\r\3\2\2\2\17\22\3\2\2\2\20\16\3\2\2\2\20\21\3\2\2")
-        buf.write("\2\21\5\3\2\2\2\22\20\3\2\2\2\23\24\5\b\5\2\24\7\3\2\2")
-        buf.write("\2\25\26\b\5\1\2\26\27\7\3\2\2\27\35\3\2\2\2\30\31\f\4")
-        buf.write("\2\2\31\32\7\5\2\2\32\34\5\b\5\5\33\30\3\2\2\2\34\37\3")
-        buf.write("\2\2\2\35\33\3\2\2\2\35\36\3\2\2\2\36\t\3\2\2\2\37\35")
-        buf.write("\3\2\2\2\4\20\35")
+        buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
+        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3")
+        buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
+        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5O\n\5")
+        buf.write("\3\5\2\2\6\2\4\6\b\2\2\2T\2\n\3\2\2\2\4\20\3\2\2\2\6\23")
+        buf.write("\3\2\2\2\bN\3\2\2\2\n\13\5\4\3\2\13\f\7\2\2\3\f\3\3\2")
+        buf.write("\2\2\r\17\5\6\4\2\16\r\3\2\2\2\17\22\3\2\2\2\20\16\3\2")
+        buf.write("\2\2\20\21\3\2\2\2\21\5\3\2\2\2\22\20\3\2\2\2\23\24\5")
+        buf.write("\b\5\2\24\7\3\2\2\2\25\26\7\3\2\2\26\27\7\6\2\2\27\30")
+        buf.write("\7\t\2\2\30\31\7\r\2\2\31\32\7\16\2\2\32\33\7\r\2\2\33")
+        buf.write("O\7\n\2\2\34\35\7\13\2\2\35O\7\6\2\2\36\37\7\3\2\2\37")
+        buf.write(" \7\7\2\2 !\7\t\2\2!\"\7\r\2\2\"#\7\16\2\2#$\7\r\2\2$")
+        buf.write("%\7\17\2\2%&\7\r\2\2&\'\7\16\2\2\'(\7\r\2\2(O\7\t\2\2")
+        buf.write(")*\7\f\2\2*+\7\7\2\2+,\7\t\2\2,-\7\r\2\2-.\7\16\2\2./")
+        buf.write("\7\r\2\2/O\7\n\2\2\60\61\7\f\2\2\61\62\7\6\2\2\62\63\7")
+        buf.write("\7\2\2\63\64\7\t\2\2\64\65\7\r\2\2\65\66\7\16\2\2\66\67")
+        buf.write("\7\r\2\2\67O\7\n\2\289\7\f\2\29:\7\6\2\2:;\7\b\2\2;<\7")
+        buf.write("\t\2\2<=\7\r\2\2=>\7\16\2\2>?\7\r\2\2?O\7\n\2\2@A\7\13")
+        buf.write("\2\2AB\7\b\2\2BC\7\t\2\2CD\7\r\2\2DE\7\16\2\2EF\7\r\2")
+        buf.write("\2FO\7\n\2\2GH\7\5\2\2HI\7\b\2\2IJ\7\t\2\2JK\7\r\2\2K")
+        buf.write("L\7\16\2\2LM\7\r\2\2MO\7\n\2\2N\25\3\2\2\2N\34\3\2\2\2")
+        buf.write("N\36\3\2\2\2N)\3\2\2\2N\60\3\2\2\2N8\3\2\2\2N@\3\2\2\2")
+        buf.write("NG\3\2\2\2O\t\3\2\2\2\4\20N")
         return buf.getvalue()
 
 
@@ -33,9 +47,13 @@ class ProtoXParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "'+'" ]
+    literalNames = [ "<INVALID>", "'add'", "'delete'", "'edit'", "'hospitals'", 
+                     "'procedures'", "'protocols'", "'('", "')'", "'show'", 
+                     "'list'", "'\"'", "<INVALID>", "','" ]
 
-    symbolicNames = [ "<INVALID>", "INT", "ID", "PLUS", "NEWLINE", "WHITESPACE" ]
+    symbolicNames = [ "<INVALID>", "ADD", "DELETE", "EDIT", "HOSP", "PROC", 
+                      "PROTO", "LP", "RP", "SHOW", "LIST", "QUOTATION", 
+                      "ID", "COMMA", "NEWLINE", "WHITESPACE" ]
 
     RULE_prog = 0
     RULE_statements = 1
@@ -45,11 +63,21 @@ class ProtoXParser ( Parser ):
     ruleNames =  [ "prog", "statements", "statement", "expr" ]
 
     EOF = Token.EOF
-    INT=1
-    ID=2
-    PLUS=3
-    NEWLINE=4
-    WHITESPACE=5
+    ADD=1
+    DELETE=2
+    EDIT=3
+    HOSP=4
+    PROC=5
+    PROTO=6
+    LP=7
+    RP=8
+    SHOW=9
+    LIST=10
+    QUOTATION=11
+    ID=12
+    COMMA=13
+    NEWLINE=14
+    WHITESPACE=15
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -155,7 +183,7 @@ class ProtoXParser ( Parser ):
             self.state = 14
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==ProtoXParser.INT:
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << ProtoXParser.ADD) | (1 << ProtoXParser.EDIT) | (1 << ProtoXParser.SHOW) | (1 << ProtoXParser.LIST))) != 0):
                 self.state = 11
                 self.statement()
                 self.state = 16
@@ -208,7 +236,7 @@ class ProtoXParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 17
-            self.expr(0)
+            self.expr()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -224,18 +252,50 @@ class ProtoXParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def INT(self):
-            return self.getToken(ProtoXParser.INT, 0)
+        def ADD(self):
+            return self.getToken(ProtoXParser.ADD, 0)
 
-        def expr(self, i:int=None):
+        def HOSP(self):
+            return self.getToken(ProtoXParser.HOSP, 0)
+
+        def LP(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(ProtoXParser.ExprContext)
+                return self.getTokens(ProtoXParser.LP)
             else:
-                return self.getTypedRuleContext(ProtoXParser.ExprContext,i)
+                return self.getToken(ProtoXParser.LP, i)
 
+        def QUOTATION(self, i:int=None):
+            if i is None:
+                return self.getTokens(ProtoXParser.QUOTATION)
+            else:
+                return self.getToken(ProtoXParser.QUOTATION, i)
 
-        def PLUS(self):
-            return self.getToken(ProtoXParser.PLUS, 0)
+        def ID(self, i:int=None):
+            if i is None:
+                return self.getTokens(ProtoXParser.ID)
+            else:
+                return self.getToken(ProtoXParser.ID, i)
+
+        def RP(self):
+            return self.getToken(ProtoXParser.RP, 0)
+
+        def SHOW(self):
+            return self.getToken(ProtoXParser.SHOW, 0)
+
+        def PROC(self):
+            return self.getToken(ProtoXParser.PROC, 0)
+
+        def COMMA(self):
+            return self.getToken(ProtoXParser.COMMA, 0)
+
+        def LIST(self):
+            return self.getToken(ProtoXParser.LIST, 0)
+
+        def PROTO(self):
+            return self.getToken(ProtoXParser.PROTO, 0)
+
+        def EDIT(self):
+            return self.getToken(ProtoXParser.EDIT, 0)
 
         def getRuleIndex(self):
             return ProtoXParser.RULE_expr
@@ -256,64 +316,170 @@ class ProtoXParser ( Parser ):
 
 
 
-    def expr(self, _p:int=0):
-        _parentctx = self._ctx
-        _parentState = self.state
-        localctx = ProtoXParser.ExprContext(self, self._ctx, _parentState)
-        _prevctx = localctx
-        _startState = 6
-        self.enterRecursionRule(localctx, 6, self.RULE_expr, _p)
+
+    def expr(self):
+
+        localctx = ProtoXParser.ExprContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 6, self.RULE_expr)
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 20
-            self.match(ProtoXParser.INT)
-            self._ctx.stop = self._input.LT(-1)
-            self.state = 27
+            self.state = 76
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,1,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    if self._parseListeners is not None:
-                        self.triggerExitRuleEvent()
-                    _prevctx = localctx
-                    localctx = ProtoXParser.ExprContext(self, _parentctx, _parentState)
-                    self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                    self.state = 22
-                    if not self.precpred(self._ctx, 2):
-                        from antlr4.error.Errors import FailedPredicateException
-                        raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                    self.state = 23
-                    self.match(ProtoXParser.PLUS)
-                    self.state = 24
-                    self.expr(3) 
+            la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
+            if la_ == 1:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 19
+                self.match(ProtoXParser.ADD)
+                self.state = 20
+                self.match(ProtoXParser.HOSP)
+                self.state = 21
+                self.match(ProtoXParser.LP)
+                self.state = 22
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 23
+                self.match(ProtoXParser.ID)
+                self.state = 24
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 25
+                self.match(ProtoXParser.RP)
+                pass
+
+            elif la_ == 2:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 26
+                self.match(ProtoXParser.SHOW)
+                self.state = 27
+                self.match(ProtoXParser.HOSP)
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 28
+                self.match(ProtoXParser.ADD)
                 self.state = 29
-                self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,1,self._ctx)
+                self.match(ProtoXParser.PROC)
+                self.state = 30
+                self.match(ProtoXParser.LP)
+                self.state = 31
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 32
+                self.match(ProtoXParser.ID)
+                self.state = 33
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 34
+                self.match(ProtoXParser.COMMA)
+                self.state = 35
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 36
+                self.match(ProtoXParser.ID)
+                self.state = 37
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 38
+                self.match(ProtoXParser.LP)
+                pass
+
+            elif la_ == 4:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 39
+                self.match(ProtoXParser.LIST)
+                self.state = 40
+                self.match(ProtoXParser.PROC)
+                self.state = 41
+                self.match(ProtoXParser.LP)
+                self.state = 42
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 43
+                self.match(ProtoXParser.ID)
+                self.state = 44
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 45
+                self.match(ProtoXParser.RP)
+                pass
+
+            elif la_ == 5:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 46
+                self.match(ProtoXParser.LIST)
+                self.state = 47
+                self.match(ProtoXParser.HOSP)
+                self.state = 48
+                self.match(ProtoXParser.PROC)
+                self.state = 49
+                self.match(ProtoXParser.LP)
+                self.state = 50
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 51
+                self.match(ProtoXParser.ID)
+                self.state = 52
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 53
+                self.match(ProtoXParser.RP)
+                pass
+
+            elif la_ == 6:
+                self.enterOuterAlt(localctx, 6)
+                self.state = 54
+                self.match(ProtoXParser.LIST)
+                self.state = 55
+                self.match(ProtoXParser.HOSP)
+                self.state = 56
+                self.match(ProtoXParser.PROTO)
+                self.state = 57
+                self.match(ProtoXParser.LP)
+                self.state = 58
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 59
+                self.match(ProtoXParser.ID)
+                self.state = 60
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 61
+                self.match(ProtoXParser.RP)
+                pass
+
+            elif la_ == 7:
+                self.enterOuterAlt(localctx, 7)
+                self.state = 62
+                self.match(ProtoXParser.SHOW)
+                self.state = 63
+                self.match(ProtoXParser.PROTO)
+                self.state = 64
+                self.match(ProtoXParser.LP)
+                self.state = 65
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 66
+                self.match(ProtoXParser.ID)
+                self.state = 67
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 68
+                self.match(ProtoXParser.RP)
+                pass
+
+            elif la_ == 8:
+                self.enterOuterAlt(localctx, 8)
+                self.state = 69
+                self.match(ProtoXParser.EDIT)
+                self.state = 70
+                self.match(ProtoXParser.PROTO)
+                self.state = 71
+                self.match(ProtoXParser.LP)
+                self.state = 72
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 73
+                self.match(ProtoXParser.ID)
+                self.state = 74
+                self.match(ProtoXParser.QUOTATION)
+                self.state = 75
+                self.match(ProtoXParser.RP)
+                pass
+
 
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
             self._errHandler.recover(self, re)
         finally:
-            self.unrollRecursionContexts(_parentctx)
+            self.exitRule()
         return localctx
 
-
-
-    def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
-        if self._predicates == None:
-            self._predicates = dict()
-        self._predicates[3] = self.expr_sempred
-        pred = self._predicates.get(ruleIndex, None)
-        if pred is None:
-            raise Exception("No predicate with index:" + str(ruleIndex))
-        else:
-            return pred(localctx, predIndex)
-
-    def expr_sempred(self, localctx:ExprContext, predIndex:int):
-            if predIndex == 0:
-                return self.precpred(self._ctx, 2)
-         
 
 
 

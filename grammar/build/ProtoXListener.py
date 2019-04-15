@@ -1,4 +1,4 @@
-# Generated from /Users/nemo/git/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
+# Generated from /Users/CFboy/PycharmProjects/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .ProtoXParser import ProtoXParser
