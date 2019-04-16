@@ -12,17 +12,52 @@ class ProtoXVisitor(ProtoXVisitorOriginal):
         return self.visitChildren(ctx)
 
     def visitExpr(self, ctx: ProtoXParser.ExprContext):
-        if ctx.ADD() and ctx.PROC() and ctx.HOSP() and ctx.ID(0) and ctx.ID(1):
-            addProcedureToHospital(ctx.ID(0), ctx.ID(1))
+        # add procedure procedureID to hospital hospitalID
+        if ctx.ADD() and ctx.PROC() and ctx.HOSP() and ctx.TEXT(0) and ctx.TEXT(1):
+            addProcedureToHospital(ctx.TEXT(0), ctx.TEXT(1))
+        # add hospital hospitalID
+        elif ctx.ADD() and ctx.HOSP() and ctx.TEXT(0):
+            addHospital(str(ctx.TEXT(0)))
+        # add procedure procedureID
+        elif ctx.ADD() and ctx.PROC() and ctx.TEXT(0):
+            addProcedure(str(ctx.TEXT(0)))
+        # add protocol protocolID protocolText
+        elif ctx.ADD() and ctx.PROTO() and ctx.TEXT(0) and ctx.TEXT(1):
+            addProtocol(str(ctx.TEXT(0)), str(ctx.TEXT(1)))
+        # show hospitals
+        elif ctx.SHOW() and ctx.HOSP():
+            showHospitals()
+        # show procedures
+        elif ctx.SHOW() and ctx.PROC():
+            showProcedures()
+        # show protocol protocolID
+        elif ctx.SHOW() and ctx.PROTO() and ctx.TEXT(0):
+            showProtocol(str(ctx.TEXT(0)))
+        # show protocols
+        elif ctx.SHOW() and ctx.PROTO():
+            showProtocols()
 
-        elif ctx.ADD() and ctx.HOSP() and ctx.ID(0):
-            addHospital(str(ctx.ID(0)))
-        # ADD
-        # PROC
-        # ID
-        # TO
-        # HOSP
-        # ID
+def showHospitals():
+    hospitals = loadHospitals()
+    for h in hospitals.keys():
+        print(h)
+
+def showProcedures():
+    procedures = loadProcedures()
+    for p in procedures.keys():
+        print(p)
+
+def showProtocols():
+    protocols = loadProtocols()
+    for p in protocols.keys():
+        print(p)
+
+def showProtocol(protocolID):
+    protocols = loadProtocols()
+    if protocolID in protocols.keys():
+        print(protocols[protocolID])
+    else:
+        print("Protocol ID not found.")
 
 def addHospital(hospitalID):
     hospitals = loadHospitals()
@@ -32,9 +67,24 @@ def addHospital(hospitalID):
     else:
         print("Hospital already in List")
 
+def addProcedure(procedureID):
+    procedures = loadProcedures()
+    if procedureID not in procedures:
+        procedures[procedureID] = []
+        saveProcedures(procedures)
+    else:
+        print("Procedure already in List")
+
+def addProtocol(protocolID, protocolText):
+    protocols = loadProtocols()
+    if protocolID not in protocols:
+        protocols[protocolID] = protocolText
+        saveProtocols(protocols)
+    else:
+        print("Protocol already in List")
+
 def addProcedureToHospital(procedureID, hospitalID):
     hospitals = loadHospitals()
-    print(hospitals.keys())
     procedures = loadProcedures()
     if hospitalID in hospitals.keys() and procedureID in procedures.keys():
         hospitals[hospitalID].append(procedureID)
@@ -44,7 +94,6 @@ def addProcedureToHospital(procedureID, hospitalID):
         print("Hospital not in list. Please create hospital.")
     if procedureID not in procedures.keys():
         print("Procedure not in list. Please create procedure.")
-
 
 
 def loadHospitals():
@@ -80,11 +129,11 @@ def saveHospitals(hospital):
     file.close()
 
 def saveProcedures(procedure):
-    file = open('grammar/data/procedure.pickle', 'wb+')
+    file = open('grammar/data/procedures.pickle', 'wb+')
     pickle.dump(procedure, file)
     file.close()
 
 def saveProtocols(protocol):
-    file = open('grammar/data/protocol.pickle', 'wb+')
+    file = open('grammar/data/protocols.pickle', 'wb+')
     pickle.dump(protocol, file)
     file.close()

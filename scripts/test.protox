@@ -1,1 +1,10 @@
-add hospitals Bryan_Hospital
+show hospitals
+show procedures
+show protocols
+add hospitals "Bryan Hospital"
+add procedures "CPR"
+add protocols "Hand washing" "asdgadsrghasdfasdfasdfg"
+show hospitals
+show procedures
+show protocols
+show protocol "Hand washing"
