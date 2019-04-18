@@ -45,6 +45,39 @@ class ProtoXVisitor(ProtoXVisitorOriginal):
         # show protocols
         elif ctx.SHOW() and ctx.PROTO():
             showProtocols()
+        elif ctx.DELETE() and ctx.HOSP() and ctx.TEXT(0):
+            deleteHospitals(str(ctx.TEXT(0))[1:-1])
+        elif ctx.DELETE() and ctx.PROC() and ctx.TEXT(0):
+            deleteProcedure(str(ctx.TEXT(0))[1:-1])
+
+
+def deleteHospitals(hospitalID):
+    hospitals = loadHospitals()
+    if hospitalID in hospitals.keys():
+        del hospitals[hospitalID]
+        saveHospitals(hospitals)
+        print("Hospital '%s' deleted." % hospitalID)
+    else:
+        print("Hospital '%s' does not exist." % hospitalID)
+
+def deleteProcedure(procedureID):
+    procedures = loadProcedures()
+    if procedureID not in procedures.keys():
+        print("Procedure '%s' does not exist." % procedureID)
+    else:
+        hospitals = loadHospitals()
+        hospitalsList= []
+        for h in hospitals.keys():
+            if procedureID in hospitals[h]:
+                hospitalsList.append(h)
+        if not hospitalsList:
+            del procedures[procedureID]
+            saveProcedures(procedures)
+            print("Procedure '%s' deleted." % procedureID)
+        else:
+            print("Procedure '%s' is in use by: " % procedureID)
+            for h in hospitalsList:
+                print(h)
 
 def showHospitalProcedures(hospitalID):
     hospitals = loadHospitals()

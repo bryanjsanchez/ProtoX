@@ -1,4 +1,4 @@
-# Generated from /Users/nemo/git/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
+# Generated from /Users/reniervelazco/Desktop/ProtoX/grammar/src/ProtoX.g4 by ANTLR 4.7.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,34 +8,38 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\16")
-        buf.write("S\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\3\7\3")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17")
+        buf.write("_\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\3\7\3")
         buf.write("\17\n\3\f\3\16\3\22\13\3\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3")
         buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
         buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3")
         buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
-        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\5")
-        buf.write("\5Q\n\5\3\5\2\2\6\2\4\6\b\2\2\2_\2\n\3\2\2\2\4\20\3\2")
-        buf.write("\2\2\6\23\3\2\2\2\bP\3\2\2\2\n\13\5\4\3\2\13\f\7\2\2\3")
-        buf.write("\f\3\3\2\2\2\r\17\5\6\4\2\16\r\3\2\2\2\17\22\3\2\2\2\20")
-        buf.write("\16\3\2\2\2\20\21\3\2\2\2\21\5\3\2\2\2\22\20\3\2\2\2\23")
-        buf.write("\24\5\b\5\2\24\7\3\2\2\2\25\26\7\n\2\2\26Q\7\6\2\2\27")
-        buf.write("\30\7\3\2\2\30\31\7\7\2\2\31\32\7\f\2\2\32\33\7\t\2\2")
-        buf.write("\33\34\7\6\2\2\34Q\7\f\2\2\35\36\7\3\2\2\36\37\7\b\2\2")
-        buf.write("\37 \7\f\2\2 !\7\t\2\2!\"\7\7\2\2\"Q\7\f\2\2#$\7\13\2")
-        buf.write("\2$%\7\7\2\2%Q\7\f\2\2&\'\7\13\2\2\'(\7\6\2\2()\7\7\2")
-        buf.write("\2)Q\7\f\2\2*+\7\13\2\2+,\7\6\2\2,-\7\b\2\2-Q\7\f\2\2")
-        buf.write("./\7\n\2\2/\60\7\6\2\2\60\61\7\f\2\2\61Q\7\7\2\2\62\63")
-        buf.write("\7\n\2\2\63\64\7\6\2\2\64\65\7\f\2\2\65Q\7\b\2\2\66\67")
-        buf.write("\7\n\2\2\678\7\7\2\289\7\f\2\29Q\7\b\2\2:;\7\n\2\2;Q\7")
-        buf.write("\6\2\2<=\7\n\2\2=Q\7\7\2\2>?\7\n\2\2?@\7\b\2\2@Q\7\f\2")
-        buf.write("\2AB\7\n\2\2BQ\7\b\2\2CD\7\5\2\2DE\7\b\2\2EQ\7\f\2\2F")
-        buf.write("G\7\3\2\2GH\7\6\2\2HQ\7\f\2\2IJ\7\3\2\2JK\7\7\2\2KQ\7")
-        buf.write("\f\2\2LM\7\3\2\2MN\7\b\2\2NO\7\f\2\2OQ\7\f\2\2P\25\3\2")
-        buf.write("\2\2P\27\3\2\2\2P\35\3\2\2\2P#\3\2\2\2P&\3\2\2\2P*\3\2")
-        buf.write("\2\2P.\3\2\2\2P\62\3\2\2\2P\66\3\2\2\2P:\3\2\2\2P<\3\2")
-        buf.write("\2\2P>\3\2\2\2PA\3\2\2\2PC\3\2\2\2PF\3\2\2\2PI\3\2\2\2")
-        buf.write("PL\3\2\2\2Q\t\3\2\2\2\4\20P")
+        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3")
+        buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5]\n")
+        buf.write("\5\3\5\2\2\6\2\4\6\b\2\2\2n\2\n\3\2\2\2\4\20\3\2\2\2\6")
+        buf.write("\23\3\2\2\2\b\\\3\2\2\2\n\13\5\4\3\2\13\f\7\2\2\3\f\3")
+        buf.write("\3\2\2\2\r\17\5\6\4\2\16\r\3\2\2\2\17\22\3\2\2\2\20\16")
+        buf.write("\3\2\2\2\20\21\3\2\2\2\21\5\3\2\2\2\22\20\3\2\2\2\23\24")
+        buf.write("\5\b\5\2\24\7\3\2\2\2\25\26\7\13\2\2\26]\7\6\2\2\27\30")
+        buf.write("\7\3\2\2\30\31\7\7\2\2\31\32\7\r\2\2\32\33\7\n\2\2\33")
+        buf.write("\34\7\6\2\2\34]\7\r\2\2\35\36\7\3\2\2\36\37\7\b\2\2\37")
+        buf.write(" \7\r\2\2 !\7\n\2\2!\"\7\7\2\2\"]\7\r\2\2#$\7\f\2\2$%")
+        buf.write("\7\7\2\2%]\7\r\2\2&\'\7\f\2\2\'(\7\6\2\2()\7\7\2\2)]\7")
+        buf.write("\r\2\2*+\7\f\2\2+,\7\6\2\2,-\7\b\2\2-]\7\r\2\2./\7\13")
+        buf.write("\2\2/\60\7\6\2\2\60\61\7\r\2\2\61]\7\7\2\2\62\63\7\13")
+        buf.write("\2\2\63\64\7\6\2\2\64\65\7\r\2\2\65]\7\b\2\2\66\67\7\13")
+        buf.write("\2\2\678\7\7\2\289\7\r\2\29]\7\b\2\2:;\7\13\2\2;]\7\6")
+        buf.write("\2\2<=\7\13\2\2=]\7\7\2\2>?\7\13\2\2?@\7\b\2\2@]\7\r\2")
+        buf.write("\2AB\7\13\2\2B]\7\b\2\2CD\7\5\2\2DE\7\b\2\2E]\7\r\2\2")
+        buf.write("FG\7\3\2\2GH\7\6\2\2H]\7\r\2\2IJ\7\3\2\2JK\7\7\2\2K]\7")
+        buf.write("\r\2\2LM\7\3\2\2MN\7\b\2\2NO\7\r\2\2O]\7\r\2\2PQ\7\4\2")
+        buf.write("\2QR\7\6\2\2R]\7\r\2\2ST\7\4\2\2TU\7\7\2\2UV\7\r\2\2V")
+        buf.write("W\7\t\2\2WX\7\6\2\2X]\7\r\2\2YZ\7\4\2\2Z[\7\7\2\2[]\7")
+        buf.write("\r\2\2\\\25\3\2\2\2\\\27\3\2\2\2\\\35\3\2\2\2\\#\3\2\2")
+        buf.write("\2\\&\3\2\2\2\\*\3\2\2\2\\.\3\2\2\2\\\62\3\2\2\2\\\66")
+        buf.write("\3\2\2\2\\:\3\2\2\2\\<\3\2\2\2\\>\3\2\2\2\\A\3\2\2\2\\")
+        buf.write("C\3\2\2\2\\F\3\2\2\2\\I\3\2\2\2\\L\3\2\2\2\\P\3\2\2\2")
+        buf.write("\\S\3\2\2\2\\Y\3\2\2\2]\t\3\2\2\2\4\20\\")
         return buf.getvalue()
 
 
@@ -50,10 +54,11 @@ class ProtoXParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'add'", "'delete'", "'edit'", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "'to'", "'show'", "'list'" ]
+                     "<INVALID>", "<INVALID>", "'from'", "'to'", "'show'", 
+                     "'list'" ]
 
     symbolicNames = [ "<INVALID>", "ADD", "DELETE", "EDIT", "HOSP", "PROC", 
-                      "PROTO", "TO", "SHOW", "LIST", "TEXT", "NEWLINE", 
+                      "PROTO", "FROM", "TO", "SHOW", "LIST", "TEXT", "NEWLINE", 
                       "WHITESPACE" ]
 
     RULE_prog = 0
@@ -70,12 +75,13 @@ class ProtoXParser ( Parser ):
     HOSP=4
     PROC=5
     PROTO=6
-    TO=7
-    SHOW=8
-    LIST=9
-    TEXT=10
-    NEWLINE=11
-    WHITESPACE=12
+    FROM=7
+    TO=8
+    SHOW=9
+    LIST=10
+    TEXT=11
+    NEWLINE=12
+    WHITESPACE=13
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -181,7 +187,7 @@ class ProtoXParser ( Parser ):
             self.state = 14
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << ProtoXParser.ADD) | (1 << ProtoXParser.EDIT) | (1 << ProtoXParser.SHOW) | (1 << ProtoXParser.LIST))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << ProtoXParser.ADD) | (1 << ProtoXParser.DELETE) | (1 << ProtoXParser.EDIT) | (1 << ProtoXParser.SHOW) | (1 << ProtoXParser.LIST))) != 0):
                 self.state = 11
                 self.statement()
                 self.state = 16
@@ -280,6 +286,12 @@ class ProtoXParser ( Parser ):
         def EDIT(self):
             return self.getToken(ProtoXParser.EDIT, 0)
 
+        def DELETE(self):
+            return self.getToken(ProtoXParser.DELETE, 0)
+
+        def FROM(self):
+            return self.getToken(ProtoXParser.FROM, 0)
+
         def getRuleIndex(self):
             return ProtoXParser.RULE_expr
 
@@ -305,7 +317,7 @@ class ProtoXParser ( Parser ):
         localctx = ProtoXParser.ExprContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_expr)
         try:
-            self.state = 78
+            self.state = 90
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
@@ -491,6 +503,42 @@ class ProtoXParser ( Parser ):
                 self.state = 76
                 self.match(ProtoXParser.TEXT)
                 self.state = 77
+                self.match(ProtoXParser.TEXT)
+                pass
+
+            elif la_ == 18:
+                self.enterOuterAlt(localctx, 18)
+                self.state = 78
+                self.match(ProtoXParser.DELETE)
+                self.state = 79
+                self.match(ProtoXParser.HOSP)
+                self.state = 80
+                self.match(ProtoXParser.TEXT)
+                pass
+
+            elif la_ == 19:
+                self.enterOuterAlt(localctx, 19)
+                self.state = 81
+                self.match(ProtoXParser.DELETE)
+                self.state = 82
+                self.match(ProtoXParser.PROC)
+                self.state = 83
+                self.match(ProtoXParser.TEXT)
+                self.state = 84
+                self.match(ProtoXParser.FROM)
+                self.state = 85
+                self.match(ProtoXParser.HOSP)
+                self.state = 86
+                self.match(ProtoXParser.TEXT)
+                pass
+
+            elif la_ == 20:
+                self.enterOuterAlt(localctx, 20)
+                self.state = 87
+                self.match(ProtoXParser.DELETE)
+                self.state = 88
+                self.match(ProtoXParser.PROC)
+                self.state = 89
                 self.match(ProtoXParser.TEXT)
                 pass
 

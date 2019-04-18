@@ -27,6 +27,9 @@ expr: SHOW HOSP
 | ADD HOSP TEXT
 | ADD PROC TEXT
 | ADD PROTO TEXT TEXT
+| DELETE HOSP TEXT
+| DELETE PROC TEXT FROM HOSP TEXT
+| DELETE PROC TEXT
 ;
 
 
@@ -48,6 +51,7 @@ HOSP : 'hospitals' | 'hospital';
 PROC : 'procedures' | 'procedure';
 PROTO : 'protocols' | 'protocol';
 
+FROM : 'from';
 TO : 'to';
 SHOW : 'show';
 LIST : 'list';
