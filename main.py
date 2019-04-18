@@ -7,14 +7,15 @@ from antlr4 import *
 
 
 def main():
-    filepath = "scripts/test.protox"
-    input = FileStream(filepath)
-    lexer = ProtoXLexer(input)
-    stream = CommonTokenStream(lexer)
-    parser = ProtoXParser(stream)
-    tree = parser.prog()
-    visitor = ProtoXVisitor()
-    return visitor.visit(tree)
+    while True:
+        inputStream = InputStream(input())
+        lexer = ProtoXLexer(inputStream)
+        stream = CommonTokenStream(lexer)
+        parser = ProtoXParser(stream)
+        tree = parser.prog()
+        visitor = ProtoXVisitor()
+        if visitor.visit(tree):
+            print(visitor.visit(tree))
 
 
 if __name__ == '__main__':

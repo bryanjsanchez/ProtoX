@@ -1,10 +1,14 @@
+add hospital "Bryan's hospital"
 show hospitals
-show procedures
-show protocols
-add hospitals "Bryan Hospital"
-add procedures "CPR"
-add protocols "Hand washing" "asdgadsrghasdfasdfasdfg"
-show hospitals
-show procedures
-show protocols
-show protocol "Hand washing"
+add procedure "CPR"
+add procedure "vaccination"
+add procedure "blood sampling"
+add procedure "operating room"
+add protocol "hand washing" "HAND WASHING DESCRIPTION"
+add protocol "sterilization" "STERILIZATION DESCRIPTION"
+add protocol "ethics" "ETHICS DESCRIPTION"
+add protocol "ethics" to procedure "CPR"
+add protocol "ethics" to procedure "blood sampling"
+add protocol "ethics" to procedure "operating room"
+show hospital "Bryan's hospital" protocols
+show hospital
