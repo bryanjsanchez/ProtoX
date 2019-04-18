@@ -15,6 +15,9 @@ class ProtoXVisitor(ProtoXVisitorOriginal):
         # add procedure procedureID to hospital hospitalID
         if ctx.ADD() and ctx.PROC() and ctx.HOSP() and ctx.TEXT(0) and ctx.TEXT(1):
             addProcedureToHospital(str(ctx.TEXT(0))[1:-1], str(ctx.TEXT(1))[1:-1])
+        # add protocol protocolID to procidure procidureID
+        elif ctx.ADD() and ctx.PROTO() and ctx.PROC() and ctx.TEXT(0) and ctx.TEXT(1):
+            addProtocoltoProcedure(str(ctx.TEXT(0))[1:-1], str(ctx.TEXT(1))[1:-1])
         # add hospital hospitalID
         elif ctx.ADD() and ctx.HOSP() and ctx.TEXT(0):
             addHospital(str(ctx.TEXT(0))[1:-1])
@@ -48,7 +51,9 @@ class ProtoXVisitor(ProtoXVisitorOriginal):
         elif ctx.DELETE() and ctx.HOSP() and ctx.TEXT(0):
             deleteHospitals(str(ctx.TEXT(0))[1:-1])
         elif ctx.DELETE() and ctx.PROC() and ctx.TEXT(0):
-            deleteProcedure(str(ctx.TEXT(0))[1:-1])
+            deleteProcedures(str(ctx.TEXT(0))[1:-1])
+        elif ctx.DELETE() and ctx.PROTO() and ctx.TEXT(0):
+            deleteProtocols(str(ctx.TEXT(0))[1:-1])
 
 
 def deleteHospitals(hospitalID):
@@ -60,13 +65,13 @@ def deleteHospitals(hospitalID):
     else:
         print("Hospital '%s' does not exist." % hospitalID)
 
-def deleteProcedure(procedureID):
+def deleteProcedures(procedureID):
     procedures = loadProcedures()
     if procedureID not in procedures.keys():
         print("Procedure '%s' does not exist." % procedureID)
     else:
         hospitals = loadHospitals()
-        hospitalsList= []
+        hospitalsList = []
         for h in hospitals.keys():
             if procedureID in hospitals[h]:
                 hospitalsList.append(h)
@@ -78,6 +83,28 @@ def deleteProcedure(procedureID):
             print("Procedure '%s' is in use by: " % procedureID)
             for h in hospitalsList:
                 print(h)
+
+def deleteProtocols(protocolID):
+    protocols = loadProtocols()
+    if protocolID not in protocols.keys():
+        print("Protocol '%s' does not exist." % protocolID)
+    else:
+        procedures = loadProcedures()
+        proceduresList = []
+        for proc in procedures.keys():
+            if protocolID in procedures[proc]:
+                proceduresList.append(proc)
+        if not proceduresList:
+            del protocols[protocolID]
+            saveProtocols(protocols)
+            print("Protocol '%s' deleted." % protocolID)
+        else:
+            print("Protocol '%s' is in use by: " % protocolID)
+            for proc in proceduresList:
+                print(proc)
+
+
+
 
 def showHospitalProcedures(hospitalID):
     hospitals = loadHospitals()
@@ -176,6 +203,20 @@ def addProcedureToHospital(procedureID, hospitalID):
         print("Hospital '%s' does not exist. Please create hospital." % hospitalID)
     if procedureID not in procedures.keys():
         print("Procedure '%s' does not exist. Please create procedure." % procedureID)
+
+def addProtocoltoProcedure(protocolID, procedureID):
+    procedures = loadProcedures()
+    protocols = loadProtocols()
+    if procedureID in procedures.keys() and protocolID in protocols.keys():
+        procedures[procedureID].append(protocolID)
+        saveProcedures(procedures)
+        print("Protocol '%s' added to procedure '%s'." % (protocolID, procedureID))
+        return
+    if procedureID not in procedures.keys():
+        print("Procedure '%s' does not exist. Please create procedure." % procedureID)
+    if protocolID not in protocols.keys():
+        print("Protocol '%s' does not exist. Please create protocol." % protocolID)
+
 
 
 def loadHospitals():
