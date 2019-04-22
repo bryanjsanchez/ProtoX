@@ -23,7 +23,7 @@ expr: SHOW HOSP
 | SHOW PROC
 | SHOW PROTO TEXT
 | SHOW PROTO
-| EDIT PROTO TEXT
+| EDIT PROTO TEXT WITH TEXT
 | ADD HOSP TEXT
 | ADD PROC TEXT
 | ADD PROTO TEXT TEXT
@@ -53,6 +53,7 @@ HOSP : 'hospitals' | 'hospital';
 PROC : 'procedures' | 'procedure';
 PROTO : 'protocols' | 'protocol';
 
+WITH : 'with' ;
 FROM : 'from';
 TO : 'to';
 SHOW : 'show';

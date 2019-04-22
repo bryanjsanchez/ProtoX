@@ -8,41 +8,41 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17")
-        buf.write("h\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\3\7\3")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20")
+        buf.write("j\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\3\7\3")
         buf.write("\17\n\3\f\3\16\3\22\13\3\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3")
         buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
         buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3")
         buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
         buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3")
         buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
-        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5f\n\5\3\5\2\2\6\2\4\6")
-        buf.write("\b\2\2\2y\2\n\3\2\2\2\4\20\3\2\2\2\6\23\3\2\2\2\be\3\2")
-        buf.write("\2\2\n\13\5\4\3\2\13\f\7\2\2\3\f\3\3\2\2\2\r\17\5\6\4")
-        buf.write("\2\16\r\3\2\2\2\17\22\3\2\2\2\20\16\3\2\2\2\20\21\3\2")
-        buf.write("\2\2\21\5\3\2\2\2\22\20\3\2\2\2\23\24\5\b\5\2\24\7\3\2")
-        buf.write("\2\2\25\26\7\13\2\2\26f\7\6\2\2\27\30\7\3\2\2\30\31\7")
-        buf.write("\7\2\2\31\32\7\r\2\2\32\33\7\n\2\2\33\34\7\6\2\2\34f\7")
-        buf.write("\r\2\2\35\36\7\3\2\2\36\37\7\b\2\2\37 \7\r\2\2 !\7\n\2")
-        buf.write("\2!\"\7\7\2\2\"f\7\r\2\2#$\7\f\2\2$%\7\7\2\2%f\7\r\2\2")
-        buf.write("&\'\7\f\2\2\'(\7\6\2\2()\7\7\2\2)f\7\r\2\2*+\7\f\2\2+")
-        buf.write(",\7\6\2\2,-\7\b\2\2-f\7\r\2\2./\7\13\2\2/\60\7\6\2\2\60")
-        buf.write("\61\7\r\2\2\61f\7\7\2\2\62\63\7\13\2\2\63\64\7\6\2\2\64")
-        buf.write("\65\7\r\2\2\65f\7\b\2\2\66\67\7\13\2\2\678\7\7\2\289\7")
-        buf.write("\r\2\29f\7\b\2\2:;\7\13\2\2;f\7\6\2\2<=\7\13\2\2=f\7\7")
-        buf.write("\2\2>?\7\13\2\2?@\7\b\2\2@f\7\r\2\2AB\7\13\2\2Bf\7\b\2")
-        buf.write("\2CD\7\5\2\2DE\7\b\2\2Ef\7\r\2\2FG\7\3\2\2GH\7\6\2\2H")
-        buf.write("f\7\r\2\2IJ\7\3\2\2JK\7\7\2\2Kf\7\r\2\2LM\7\3\2\2MN\7")
-        buf.write("\b\2\2NO\7\r\2\2Of\7\r\2\2PQ\7\4\2\2QR\7\6\2\2Rf\7\r\2")
-        buf.write("\2ST\7\4\2\2TU\7\7\2\2UV\7\r\2\2VW\7\t\2\2WX\7\6\2\2X")
-        buf.write("f\7\r\2\2YZ\7\4\2\2Z[\7\b\2\2[\\\7\r\2\2\\]\7\t\2\2]^")
-        buf.write("\7\7\2\2^f\7\r\2\2_`\7\4\2\2`a\7\7\2\2af\7\r\2\2bc\7\4")
-        buf.write("\2\2cd\7\b\2\2df\7\r\2\2e\25\3\2\2\2e\27\3\2\2\2e\35\3")
-        buf.write("\2\2\2e#\3\2\2\2e&\3\2\2\2e*\3\2\2\2e.\3\2\2\2e\62\3\2")
-        buf.write("\2\2e\66\3\2\2\2e:\3\2\2\2e<\3\2\2\2e>\3\2\2\2eA\3\2\2")
-        buf.write("\2eC\3\2\2\2eF\3\2\2\2eI\3\2\2\2eL\3\2\2\2eP\3\2\2\2e")
-        buf.write("S\3\2\2\2eY\3\2\2\2e_\3\2\2\2eb\3\2\2\2f\t\3\2\2\2\4\20")
-        buf.write("e")
+        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5h\n\5\3\5\2\2")
+        buf.write("\6\2\4\6\b\2\2\2{\2\n\3\2\2\2\4\20\3\2\2\2\6\23\3\2\2")
+        buf.write("\2\bg\3\2\2\2\n\13\5\4\3\2\13\f\7\2\2\3\f\3\3\2\2\2\r")
+        buf.write("\17\5\6\4\2\16\r\3\2\2\2\17\22\3\2\2\2\20\16\3\2\2\2\20")
+        buf.write("\21\3\2\2\2\21\5\3\2\2\2\22\20\3\2\2\2\23\24\5\b\5\2\24")
+        buf.write("\7\3\2\2\2\25\26\7\f\2\2\26h\7\6\2\2\27\30\7\3\2\2\30")
+        buf.write("\31\7\7\2\2\31\32\7\16\2\2\32\33\7\13\2\2\33\34\7\6\2")
+        buf.write("\2\34h\7\16\2\2\35\36\7\3\2\2\36\37\7\b\2\2\37 \7\16\2")
+        buf.write("\2 !\7\13\2\2!\"\7\7\2\2\"h\7\16\2\2#$\7\r\2\2$%\7\7\2")
+        buf.write("\2%h\7\16\2\2&\'\7\r\2\2\'(\7\6\2\2()\7\7\2\2)h\7\16\2")
+        buf.write("\2*+\7\r\2\2+,\7\6\2\2,-\7\b\2\2-h\7\16\2\2./\7\f\2\2")
+        buf.write("/\60\7\6\2\2\60\61\7\16\2\2\61h\7\7\2\2\62\63\7\f\2\2")
+        buf.write("\63\64\7\6\2\2\64\65\7\16\2\2\65h\7\b\2\2\66\67\7\f\2")
+        buf.write("\2\678\7\7\2\289\7\16\2\29h\7\b\2\2:;\7\f\2\2;h\7\6\2")
+        buf.write("\2<=\7\f\2\2=h\7\7\2\2>?\7\f\2\2?@\7\b\2\2@h\7\16\2\2")
+        buf.write("AB\7\f\2\2Bh\7\b\2\2CD\7\5\2\2DE\7\b\2\2EF\7\16\2\2FG")
+        buf.write("\7\t\2\2Gh\7\16\2\2HI\7\3\2\2IJ\7\6\2\2Jh\7\16\2\2KL\7")
+        buf.write("\3\2\2LM\7\7\2\2Mh\7\16\2\2NO\7\3\2\2OP\7\b\2\2PQ\7\16")
+        buf.write("\2\2Qh\7\16\2\2RS\7\4\2\2ST\7\6\2\2Th\7\16\2\2UV\7\4\2")
+        buf.write("\2VW\7\7\2\2WX\7\16\2\2XY\7\n\2\2YZ\7\6\2\2Zh\7\16\2\2")
+        buf.write("[\\\7\4\2\2\\]\7\b\2\2]^\7\16\2\2^_\7\n\2\2_`\7\7\2\2")
+        buf.write("`h\7\16\2\2ab\7\4\2\2bc\7\7\2\2ch\7\16\2\2de\7\4\2\2e")
+        buf.write("f\7\b\2\2fh\7\16\2\2g\25\3\2\2\2g\27\3\2\2\2g\35\3\2\2")
+        buf.write("\2g#\3\2\2\2g&\3\2\2\2g*\3\2\2\2g.\3\2\2\2g\62\3\2\2\2")
+        buf.write("g\66\3\2\2\2g:\3\2\2\2g<\3\2\2\2g>\3\2\2\2gA\3\2\2\2g")
+        buf.write("C\3\2\2\2gH\3\2\2\2gK\3\2\2\2gN\3\2\2\2gR\3\2\2\2gU\3")
+        buf.write("\2\2\2g[\3\2\2\2ga\3\2\2\2gd\3\2\2\2h\t\3\2\2\2\4\20g")
         return buf.getvalue()
 
 
@@ -57,12 +57,12 @@ class ProtoXParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'add'", "'delete'", "'edit'", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "'from'", "'to'", "'show'", 
-                     "'list'" ]
+                     "<INVALID>", "<INVALID>", "'with'", "'from'", "'to'", 
+                     "'show'", "'list'" ]
 
     symbolicNames = [ "<INVALID>", "ADD", "DELETE", "EDIT", "HOSP", "PROC", 
-                      "PROTO", "FROM", "TO", "SHOW", "LIST", "TEXT", "NEWLINE", 
-                      "WHITESPACE" ]
+                      "PROTO", "WITH", "FROM", "TO", "SHOW", "LIST", "TEXT", 
+                      "NEWLINE", "WHITESPACE" ]
 
     RULE_prog = 0
     RULE_statements = 1
@@ -78,13 +78,14 @@ class ProtoXParser ( Parser ):
     HOSP=4
     PROC=5
     PROTO=6
-    FROM=7
-    TO=8
-    SHOW=9
-    LIST=10
-    TEXT=11
-    NEWLINE=12
-    WHITESPACE=13
+    WITH=7
+    FROM=8
+    TO=9
+    SHOW=10
+    LIST=11
+    TEXT=12
+    NEWLINE=13
+    WHITESPACE=14
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -289,6 +290,9 @@ class ProtoXParser ( Parser ):
         def EDIT(self):
             return self.getToken(ProtoXParser.EDIT, 0)
 
+        def WITH(self):
+            return self.getToken(ProtoXParser.WITH, 0)
+
         def DELETE(self):
             return self.getToken(ProtoXParser.DELETE, 0)
 
@@ -320,7 +324,7 @@ class ProtoXParser ( Parser ):
         localctx = ProtoXParser.ExprContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_expr)
         try:
-            self.state = 99
+            self.state = 101
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
@@ -475,99 +479,103 @@ class ProtoXParser ( Parser ):
                 self.match(ProtoXParser.PROTO)
                 self.state = 67
                 self.match(ProtoXParser.TEXT)
+                self.state = 68
+                self.match(ProtoXParser.WITH)
+                self.state = 69
+                self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 15:
                 self.enterOuterAlt(localctx, 15)
-                self.state = 68
-                self.match(ProtoXParser.ADD)
-                self.state = 69
-                self.match(ProtoXParser.HOSP)
                 self.state = 70
+                self.match(ProtoXParser.ADD)
+                self.state = 71
+                self.match(ProtoXParser.HOSP)
+                self.state = 72
                 self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 16:
                 self.enterOuterAlt(localctx, 16)
-                self.state = 71
-                self.match(ProtoXParser.ADD)
-                self.state = 72
-                self.match(ProtoXParser.PROC)
                 self.state = 73
+                self.match(ProtoXParser.ADD)
+                self.state = 74
+                self.match(ProtoXParser.PROC)
+                self.state = 75
                 self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 17:
                 self.enterOuterAlt(localctx, 17)
-                self.state = 74
-                self.match(ProtoXParser.ADD)
-                self.state = 75
-                self.match(ProtoXParser.PROTO)
                 self.state = 76
-                self.match(ProtoXParser.TEXT)
+                self.match(ProtoXParser.ADD)
                 self.state = 77
+                self.match(ProtoXParser.PROTO)
+                self.state = 78
+                self.match(ProtoXParser.TEXT)
+                self.state = 79
                 self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 18:
                 self.enterOuterAlt(localctx, 18)
-                self.state = 78
-                self.match(ProtoXParser.DELETE)
-                self.state = 79
-                self.match(ProtoXParser.HOSP)
                 self.state = 80
+                self.match(ProtoXParser.DELETE)
+                self.state = 81
+                self.match(ProtoXParser.HOSP)
+                self.state = 82
                 self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 19:
                 self.enterOuterAlt(localctx, 19)
-                self.state = 81
-                self.match(ProtoXParser.DELETE)
-                self.state = 82
-                self.match(ProtoXParser.PROC)
                 self.state = 83
-                self.match(ProtoXParser.TEXT)
+                self.match(ProtoXParser.DELETE)
                 self.state = 84
-                self.match(ProtoXParser.FROM)
+                self.match(ProtoXParser.PROC)
                 self.state = 85
-                self.match(ProtoXParser.HOSP)
+                self.match(ProtoXParser.TEXT)
                 self.state = 86
+                self.match(ProtoXParser.FROM)
+                self.state = 87
+                self.match(ProtoXParser.HOSP)
+                self.state = 88
                 self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 20:
                 self.enterOuterAlt(localctx, 20)
-                self.state = 87
-                self.match(ProtoXParser.DELETE)
-                self.state = 88
-                self.match(ProtoXParser.PROTO)
                 self.state = 89
-                self.match(ProtoXParser.TEXT)
+                self.match(ProtoXParser.DELETE)
                 self.state = 90
-                self.match(ProtoXParser.FROM)
+                self.match(ProtoXParser.PROTO)
                 self.state = 91
-                self.match(ProtoXParser.PROC)
+                self.match(ProtoXParser.TEXT)
                 self.state = 92
+                self.match(ProtoXParser.FROM)
+                self.state = 93
+                self.match(ProtoXParser.PROC)
+                self.state = 94
                 self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 21:
                 self.enterOuterAlt(localctx, 21)
-                self.state = 93
-                self.match(ProtoXParser.DELETE)
-                self.state = 94
-                self.match(ProtoXParser.PROC)
                 self.state = 95
+                self.match(ProtoXParser.DELETE)
+                self.state = 96
+                self.match(ProtoXParser.PROC)
+                self.state = 97
                 self.match(ProtoXParser.TEXT)
                 pass
 
             elif la_ == 22:
                 self.enterOuterAlt(localctx, 22)
-                self.state = 96
-                self.match(ProtoXParser.DELETE)
-                self.state = 97
-                self.match(ProtoXParser.PROTO)
                 self.state = 98
+                self.match(ProtoXParser.DELETE)
+                self.state = 99
+                self.match(ProtoXParser.PROTO)
+                self.state = 100
                 self.match(ProtoXParser.TEXT)
                 pass
 

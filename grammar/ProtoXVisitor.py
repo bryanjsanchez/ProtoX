@@ -63,7 +63,9 @@ class ProtoXVisitor(ProtoXVisitorOriginal):
         # delete protocols
         elif ctx.DELETE() and ctx.PROTO() and ctx.TEXT(0):
             deleteProtocols(str(ctx.TEXT(0))[1:-1])
-
+        # edit protocol
+        elif ctx.EDIT() and ctx.PROTO() and ctx.TEXT(0) and ctx.WITH() and ctx.TEXT(1):
+            editProtocol(str(ctx.TEXT(0))[1:-1], str(ctx.TEXT(1))[1:-1])
 
 def deleteHospitals(hospitalID):
     hospitals = loadHospitals()
@@ -111,8 +113,6 @@ def deleteProtocols(protocolID):
             print("Protocol '%s' is in use by: " % protocolID)
             for proc in proceduresList:
                 print(proc)
-
-
 
 
 def showHospitalProcedures(hospitalID):
@@ -170,6 +170,15 @@ def showProtocol(protocolID):
     protocols = loadProtocols()
     if protocolID in protocols.keys():
         print(protocols[protocolID])
+    else:
+        print("Protocol '%s' not found." % protocolID)
+
+def editProtocol(protocolID, text):
+    protocols = loadProtocols()
+    if protocolID in protocols.keys():
+        protocols[protocolID] = text
+        print("Edited protocol '%s'" % protocolID)
+        saveProtocols(protocols)
     else:
         print("Protocol '%s' not found." % protocolID)
 
