@@ -141,29 +141,41 @@ def addProtocol(protocolID, protocolText):
 def showHospitalProcedures(hospitalID):
     hospitals = loadHospitals()
     if hospitalID in hospitals:
-        for h in hospitals[hospitalID]:
-            print(h)
+        if hospitals[hospitalID]:
+            for h in hospitals[hospitalID]:
+                print(h)
+        else:
+            print("No procedures assigned to '%s'." % hospitalID)
     else:
         print("Hospital '%s' not found." % hospitalID)
 
 def showHospitalProtocols(hospitalID):
     hospitals = loadHospitals()
     if hospitalID in hospitals:
-        procedures = loadProcedures()
-        protocols = set()
-        for proc in hospitals[hospitalID]:
-            for proto in procedures[proc]:
-                protocols.add(proto)
-        for proto in protocols:
-            print(proto)
+        if hospitals[hospitalID]:
+            procedures = loadProcedures()
+            protocols = set()
+            for proc in hospitals[hospitalID]:
+                for proto in procedures[proc]:
+                    protocols.add(proto)
+            if protocols:
+                for proto in protocols:
+                    print(proto)
+            else:
+                print("No protocols assigned to procedures.")
+        else:
+            print("No procedures assigned to '%s'." % hospitalID)
     else:
         print("Hospital '%s' not found." % hospitalID)
 
 def showProcedureProtocols(procedureID):
     procedures = loadProcedures()
     if procedureID in procedures:
-        for p in procedures[procedureID]:
-            print(p)
+        if procedures[procedureID]:
+            for p in procedures[procedureID]:
+                print(p)
+        else:
+            print("No protocols assigned to '%s'." % procedureID)
     else:
         print("Procedure '%s' not found." % procedureID)
 

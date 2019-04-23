@@ -8,6 +8,7 @@ from antlr4 import *
 
 def main():
     while True:
+        print()
         inputStream = InputStream(input())
         lexer = ProtoXLexer(inputStream)
         stream = CommonTokenStream(lexer)

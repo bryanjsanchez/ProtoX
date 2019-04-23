@@ -8,7 +8,7 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20")
         buf.write("]\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\3\2\3\2\3\2\3\3\7\3")
         buf.write("\17\n\3\f\3\16\3\22\13\3\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3")
         buf.write("\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5")
@@ -20,25 +20,25 @@ def serializedATN():
         buf.write("\2\2\bZ\3\2\2\2\n\13\5\4\3\2\13\f\7\2\2\3\f\3\3\2\2\2")
         buf.write("\r\17\5\6\4\2\16\r\3\2\2\2\17\22\3\2\2\2\20\16\3\2\2\2")
         buf.write("\20\21\3\2\2\2\21\5\3\2\2\2\22\20\3\2\2\2\23\24\5\b\5")
-        buf.write("\2\24\7\3\2\2\2\25\26\7\3\2\2\26\27\7\b\2\2\27\30\7\r")
-        buf.write("\2\2\30\31\7\f\2\2\31\32\7\7\2\2\32[\7\r\2\2\33\34\7\3")
-        buf.write("\2\2\34\35\7\t\2\2\35\36\7\r\2\2\36\37\7\f\2\2\37 \7\b")
-        buf.write("\2\2 [\7\r\2\2!\"\7\3\2\2\"#\7\t\2\2#$\7\r\2\2$[\7\r\2")
-        buf.write("\2%&\7\3\2\2&\'\7\7\2\2\'[\7\r\2\2()\7\3\2\2)*\7\b\2\2")
-        buf.write("*[\7\r\2\2+,\7\6\2\2,-\7\7\2\2-.\7\r\2\2.[\7\b\2\2/\60")
-        buf.write("\7\6\2\2\60\61\7\7\2\2\61\62\7\r\2\2\62[\7\t\2\2\63\64")
-        buf.write("\7\6\2\2\64\65\7\b\2\2\65\66\7\r\2\2\66[\7\t\2\2\678\7")
-        buf.write("\6\2\289\7\t\2\29[\7\r\2\2:;\7\6\2\2;[\7\7\2\2<=\7\6\2")
-        buf.write("\2=[\7\b\2\2>?\7\6\2\2?[\7\t\2\2@A\7\4\2\2AB\7\b\2\2B")
-        buf.write("C\7\r\2\2CD\7\13\2\2DE\7\7\2\2E[\7\r\2\2FG\7\4\2\2GH\7")
-        buf.write("\t\2\2HI\7\r\2\2IJ\7\13\2\2JK\7\b\2\2K[\7\r\2\2LM\7\4")
-        buf.write("\2\2MN\7\7\2\2N[\7\r\2\2OP\7\4\2\2PQ\7\b\2\2Q[\7\r\2\2")
-        buf.write("RS\7\4\2\2ST\7\t\2\2T[\7\r\2\2UV\7\5\2\2VW\7\t\2\2WX\7")
-        buf.write("\r\2\2XY\7\n\2\2Y[\7\r\2\2Z\25\3\2\2\2Z\33\3\2\2\2Z!\3")
-        buf.write("\2\2\2Z%\3\2\2\2Z(\3\2\2\2Z+\3\2\2\2Z/\3\2\2\2Z\63\3\2")
-        buf.write("\2\2Z\67\3\2\2\2Z:\3\2\2\2Z<\3\2\2\2Z>\3\2\2\2Z@\3\2\2")
-        buf.write("\2ZF\3\2\2\2ZL\3\2\2\2ZO\3\2\2\2ZR\3\2\2\2ZU\3\2\2\2[")
-        buf.write("\t\3\2\2\2\4\20Z")
+        buf.write("\2\24\7\3\2\2\2\25\26\7\4\2\2\26\27\7\t\2\2\27\30\7\3")
+        buf.write("\2\2\30\31\7\r\2\2\31\32\7\b\2\2\32[\7\3\2\2\33\34\7\4")
+        buf.write("\2\2\34\35\7\n\2\2\35\36\7\3\2\2\36\37\7\r\2\2\37 \7\t")
+        buf.write("\2\2 [\7\3\2\2!\"\7\4\2\2\"#\7\n\2\2#$\7\3\2\2$[\7\3\2")
+        buf.write("\2%&\7\4\2\2&\'\7\b\2\2\'[\7\3\2\2()\7\4\2\2)*\7\t\2\2")
+        buf.write("*[\7\3\2\2+,\7\7\2\2,-\7\b\2\2-.\7\3\2\2.[\7\t\2\2/\60")
+        buf.write("\7\7\2\2\60\61\7\b\2\2\61\62\7\3\2\2\62[\7\n\2\2\63\64")
+        buf.write("\7\7\2\2\64\65\7\t\2\2\65\66\7\3\2\2\66[\7\n\2\2\678\7")
+        buf.write("\7\2\289\7\n\2\29[\7\3\2\2:;\7\7\2\2;[\7\b\2\2<=\7\7\2")
+        buf.write("\2=[\7\t\2\2>?\7\7\2\2?[\7\n\2\2@A\7\5\2\2AB\7\t\2\2B")
+        buf.write("C\7\3\2\2CD\7\f\2\2DE\7\b\2\2E[\7\3\2\2FG\7\5\2\2GH\7")
+        buf.write("\n\2\2HI\7\3\2\2IJ\7\f\2\2JK\7\t\2\2K[\7\3\2\2LM\7\5\2")
+        buf.write("\2MN\7\b\2\2N[\7\3\2\2OP\7\5\2\2PQ\7\t\2\2Q[\7\3\2\2R")
+        buf.write("S\7\5\2\2ST\7\n\2\2T[\7\3\2\2UV\7\6\2\2VW\7\n\2\2WX\7")
+        buf.write("\3\2\2XY\7\13\2\2Y[\7\3\2\2Z\25\3\2\2\2Z\33\3\2\2\2Z!")
+        buf.write("\3\2\2\2Z%\3\2\2\2Z(\3\2\2\2Z+\3\2\2\2Z/\3\2\2\2Z\63\3")
+        buf.write("\2\2\2Z\67\3\2\2\2Z:\3\2\2\2Z<\3\2\2\2Z>\3\2\2\2Z@\3\2")
+        buf.write("\2\2ZF\3\2\2\2ZL\3\2\2\2ZO\3\2\2\2ZR\3\2\2\2ZU\3\2\2\2")
+        buf.write("[\t\3\2\2\2\4\20Z")
         return buf.getvalue()
 
 
@@ -52,13 +52,13 @@ class ProtoXParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'add'", "'delete'", "'edit'", "'show'", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "'with'", "'from'", 
-                     "'to'" ]
+    literalNames = [ "<INVALID>", "<INVALID>", "'add'", "'delete'", "'edit'", 
+                     "'show'", "<INVALID>", "<INVALID>", "<INVALID>", "'with'", 
+                     "'from'", "'to'" ]
 
-    symbolicNames = [ "<INVALID>", "ADD", "DELETE", "EDIT", "SHOW", "HOSP", 
-                      "PROC", "PROTO", "WITH", "FROM", "TO", "TEXT", "NEWLINE", 
-                      "WHITESPACE" ]
+    symbolicNames = [ "<INVALID>", "TEXT", "ADD", "DELETE", "EDIT", "SHOW", 
+                      "HOSP", "PROC", "PROTO", "WITH", "FROM", "TO", "NEWLINE", 
+                      "WHITESPACE", "ANYTHING" ]
 
     RULE_prog = 0
     RULE_statements = 1
@@ -68,19 +68,20 @@ class ProtoXParser ( Parser ):
     ruleNames =  [ "prog", "statements", "statement", "expr" ]
 
     EOF = Token.EOF
-    ADD=1
-    DELETE=2
-    EDIT=3
-    SHOW=4
-    HOSP=5
-    PROC=6
-    PROTO=7
-    WITH=8
-    FROM=9
-    TO=10
-    TEXT=11
+    TEXT=1
+    ADD=2
+    DELETE=3
+    EDIT=4
+    SHOW=5
+    HOSP=6
+    PROC=7
+    PROTO=8
+    WITH=9
+    FROM=10
+    TO=11
     NEWLINE=12
     WHITESPACE=13
+    ANYTHING=14
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)

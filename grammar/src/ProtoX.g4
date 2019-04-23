@@ -38,6 +38,9 @@ expr:
 Lexer Rules
 ***********/
 
+TEXT : SINGLEQUOT (ANYTHING|DOUBLEQUOT)+ SINGLEQUOT
+    | DOUBLEQUOT (ANYTHING|SINGLEQUOT)+ DOUBLEQUOT;
+
 //Main methods
 ADD : 'add';
 DELETE : 'delete';
@@ -54,10 +57,11 @@ WITH : 'with' ;
 FROM : 'from';
 TO : 'to';
 
-TEXT : SINGLEQUOT (LETTER|DIGIT|SPACE|PUNCTUATION|DOUBLEQUOT)+ SINGLEQUOT
-    | DOUBLEQUOT (LETTER|DIGIT|SPACE|PUNCTUATION|SINGLEQUOT)+ DOUBLEQUOT;
 NEWLINE : '\r'? '\n' -> skip;
 WHITESPACE : (SPACE | '\t')+ -> skip;
+
+ANYTHING: ADD | DELETE | EDIT | SHOW | HOSP | PROC | PROTO | WITH | FROM | TO | NEWLINE | WHITESPACE
+| DIGIT | LETTER | PUNCTUATION | SPACE;
 
 /********
 Fragments
@@ -65,7 +69,7 @@ Fragments
 
 fragment DIGIT : [0-9];
 fragment LETTER : [A-Za-z_-];
-fragment PUNCTUATION : [,./?!;:{}];
+fragment PUNCTUATION : [,./?!;:()@#$%^&*{}];
 fragment SPACE : [ ];
 fragment SINGLEQUOT : ['];
 fragment DOUBLEQUOT : ["];
