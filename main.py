@@ -7,9 +7,12 @@ from antlr4 import *
 
 
 def main():
+    print("----------------------------------------------------")
+    print("Welcome to ProtoX!")
     while True:
-        print()
+        print("----------------------------------------------------")
         inputStream = InputStream(input())
+        print()
         lexer = ProtoXLexer(inputStream)
         stream = CommonTokenStream(lexer)
         parser = ProtoXParser(stream)
