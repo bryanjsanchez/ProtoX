@@ -1,36 +1,32 @@
+# ProtoX
+
+//Video
+
 ## Introduction
 
 ProtoX is a programming language whose purpose is to provide a framework to solve complex scenarios when decisions are vital to resolving the conflict. We create a programming language to simplify the development of surgery protocols in hospitals.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Language Features
 
-### 
+The language has three types of “objects”: hospitals, procedures and protocols. A hospital can perform many different procedures and each procedure has associated protocols. Our ProtoX language can perform the following operations:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```language
+-Create/delete a hospital.
+-Show all hospitals.
+-Add a procedure that is done to each hospital.
+-Fetch the list of protocols related to a procedure.
+-Fetch the list of protocols by hospital depending on which procedures they offer.
+-List the procedures done in each hospital for all procedures.
+-Create/delete a protocol.
+-Edit an existing protocol.
+-Assign a protocol to a procedure.
+-Remove protocol from a procedure.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Example of Program
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bryanjsanchez/ProtoX/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
