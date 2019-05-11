@@ -12,6 +12,7 @@ The language has three types of “objects”: hospitals, procedures and protoco
 
 
 ```language
+
 -Create/delete a hospital.
 -Show all hospitals.
 -Add a procedure that is done to each hospital.
@@ -22,6 +23,7 @@ The language has three types of “objects”: hospitals, procedures and protoco
 -Edit an existing protocol.
 -Assign a protocol to a procedure.
 -Remove protocol from a procedure.
+
 ```
 ### Installation
 
@@ -35,6 +37,7 @@ The language has three types of “objects”: hospitals, procedures and protoco
 In ProtoX you can make correct inputs in this way:
 
 ```example of program
+
  -Add's
 ADD PROC TEXT TO HOSP TEXT
 ADD PROTO TEXT TO PROC TEXT
@@ -60,15 +63,19 @@ DELETE PROTO TEXT
 
 -Edit's
 EDIT PROTO TEXT WITH TEXT
+
 ```
+
 An example of how you have to write it is this:
 
 ```Example
+
 add hospital "Bryan's hospital"
 show hospitals
 add procedure "CPR"
 add protocol "ethics" "ETHICS DESCRIPTION"
 add protocol "ethics" to procedure "CPR"
+
 ```
 
 ### Contributors
