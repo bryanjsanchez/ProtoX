@@ -73,4 +73,4 @@ add protocol "ethics" to procedure "CPR"
 
 ### Contributors
 
-ProtoX was developed by Bryan Sanchez (@bryanjsanchez), Renier Velazco (@velazcorenier), Christian Torres (cfboy) and Bryan Bonilla (@bryann37) for the Programing Languages course at the University of Puerto Rico Mayaguez Campus
+ProtoX was developed by Bryan Sanchez (@bryanjsanchez), Renier Velazco (@velazcorenier), Cristian Torres (cfboy) and Bryan Bonilla (@bryann37) for the Programing Languages course at the University of Puerto Rico Mayaguez Campus
