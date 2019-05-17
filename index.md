@@ -25,7 +25,7 @@ The language has three types of “objects”: hospitals, procedures and protoco
 ```
 ### Installation
 
-1. Download ProtoX from GitHub pressing the top left button.
+1. Download ProtoX from GitHub pressing the top right button.
 2. Open the folder in your IDE and make sure that have installed Python 3.7 and antlr4-python3-runtime.
 3. Run the class main.py.
 4. Start using Proto X on the terminal.
@@ -35,14 +35,14 @@ The language has three types of “objects”: hospitals, procedures and protoco
 In ProtoX you can make correct inputs in this way:
 
 ```
- -Add's
+ -Adds
 ADD PROC TEXT TO HOSP TEXT.
 ADD PROTO TEXT TO PROC TEXT.
 ADD PROTO TEXT TEXT.
 ADD HOSP TEXT
 ADD PROC TEXT
 
--Show's
+-Shows
 SHOW HOSP TEXT PROC
 SHOW HOSP TEXT PROTO
 SHOW PROC TEXT PROTO
@@ -51,20 +51,20 @@ SHOW HOSP
 SHOW PROC
 SHOW PROTO
 
--Delete's
+-Deletes
 DELETE PROC TEXT FROM HOSP TEXT
 DELETE PROTO TEXT FROM PROC TEXT
 DELETE HOSP TEXT
 DELETE PROC TEXT
 DELETE PROTO TEXT
 
--Edit's
+-Edit
 EDIT PROTO TEXT WITH TEXT
 ```
 An example of how you have to write it is this:
 
 ````
-add hospital "Bryan's hospital"
+add hospital "Perea's hospital"
 show hospitals
 add procedure "CPR"
 add protocol "ethics" "ETHICS DESCRIPTION"
