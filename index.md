@@ -69,7 +69,7 @@ add protocol "ethics" "ETHICS DESCRIPTION"
 add protocol "ethics" to procedure "CPR"
 ````
 ### Demo
-<iframe src="https://drive.google.com/open?id=1JBTmI2r4BrCSc83nF3Nt6IAucyixhQWV" width="360" height="360"></iframe>
+<iframe width="560" height="315" src="https://drive.google.com/open?id=1JBTmI2r4BrCSc83nF3Nt6IAucyixhQWV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Contributors
 
